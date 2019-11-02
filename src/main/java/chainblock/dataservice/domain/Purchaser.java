@@ -55,6 +55,7 @@ public class Purchaser implements Serializable {
 	private String clientelatitude;
 	private String clientelongitude;
 	private String previousHash;
+	private String idlotevendido;
 	
 	public Purchaser() {
 	}
@@ -70,7 +71,7 @@ public class Purchaser implements Serializable {
 			String telefonedistribuidor, String distribuidorlatitude, String distribuidorlongitude, String cliente,
 			String cnpjcliente, String iecliente, String enderecocliente, String numerocliente, String bairrocliente,
 			String cidadecliente, String estadocliente, String cepcliente, String telefonecliente,
-			String clientelatitude, String clientelongitude, String previousHash) {
+			String clientelatitude, String clientelongitude, String previousHash, String idlotevendido) {
 		
 		this.venda = venda;
 		this.lote = lote;
@@ -121,6 +122,7 @@ public class Purchaser implements Serializable {
 		this.clientelatitude = clientelatitude;
 		this.clientelongitude = clientelongitude;
 		this.previousHash = previousHash;
+		this.idlotevendido = idlotevendido;
 	}
 
 	public String getVenda() {
@@ -513,6 +515,14 @@ public class Purchaser implements Serializable {
 
 	public void setPreviousHash(String previousHash) {
 		this.previousHash = previousHash;
+	}
+	
+	public String getIdlotevendido() {
+		return idlotevendido;
+	}
+
+	public void setIdlotevendido(String idlotevendido) {
+		this.idlotevendido = idlotevendido;
 	}
 
 	@Override
