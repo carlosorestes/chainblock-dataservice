@@ -20,9 +20,9 @@ public class ChainController {
 	@Inject
     protected IChainService chainService;
 	
-	@Get(produces = MediaType.TEXT_PLAIN) 
+	@Get(produces = MediaType.APPLICATION_JSON) 
     public String index() {
-        return "Hello World"; 
+        return "Testing Chainblock Data Service"; 
     }
 	
 	@Post("/")
