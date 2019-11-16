@@ -8,13 +8,13 @@ public class Purchaser implements Serializable {
 	
 	private String venda;
 	private String lote;
+	private String cultivar;
 	private String grupodolote;
 	private String cordolote;
 	private String categoriadolote;
 	private String calibredolote;
 	private String insumosdolote;
 	private String quantidadelotevendido;
-	private String valornegociadodavenda;
 	private String safra;
 	private String datacadastrovendadolote;
 	private String qtdvendido;
@@ -71,7 +71,7 @@ public class Purchaser implements Serializable {
 			String telefonedistribuidor, String distribuidorlatitude, String distribuidorlongitude, String cliente,
 			String cnpjcliente, String iecliente, String enderecocliente, String numerocliente, String bairrocliente,
 			String cidadecliente, String estadocliente, String cepcliente, String telefonecliente,
-			String clientelatitude, String clientelongitude, String previousHash, String idlotevendido) {
+			String clientelatitude, String clientelongitude, String previousHash, String idlotevendido, String cultivar) {
 		
 		this.venda = venda;
 		this.lote = lote;
@@ -81,7 +81,6 @@ public class Purchaser implements Serializable {
 		this.calibredolote = calibredolote;
 		this.insumosdolote = insumosdolote;
 		this.quantidadelotevendido = quantidadelotevendido;
-		this.valornegociadodavenda = valornegociadodavenda;
 		this.safra = safra;
 		this.datacadastrovendadolote = datacadastrovendadolote;
 		this.qtdvendido = qtdvendido;
@@ -123,6 +122,7 @@ public class Purchaser implements Serializable {
 		this.clientelongitude = clientelongitude;
 		this.previousHash = previousHash;
 		this.idlotevendido = idlotevendido;
+		this.cultivar = cultivar;
 	}
 
 	public String getVenda() {
@@ -187,14 +187,6 @@ public class Purchaser implements Serializable {
 
 	public void setQuantidadelotevendido(String quantidadelotevendido) {
 		this.quantidadelotevendido = quantidadelotevendido;
-	}
-
-	public String getValornegociadodavenda() {
-		return valornegociadodavenda;
-	}
-
-	public void setValornegociadodavenda(String valornegociadodavenda) {
-		this.valornegociadodavenda = valornegociadodavenda;
 	}
 
 	public String getSafra() {
@@ -523,6 +515,14 @@ public class Purchaser implements Serializable {
 
 	public void setIdlotevendido(String idlotevendido) {
 		this.idlotevendido = idlotevendido;
+	}
+
+	public String getCultivar() {
+		return cultivar;
+	}
+
+	public void setCultivar(String cultivar) {
+		this.cultivar = cultivar;
 	}
 
 	@Override
